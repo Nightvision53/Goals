@@ -22,6 +22,7 @@ app.use(express.urlencoded({ extended: true }));
 
 //routes
 app.use('/api/goals', require('./routes/goalRoutes'));
+app.use('/api/users', require('./routes/userRoutes'));
 
 
 app.listen(PORT, () => { console.log(`Server is running on http://localhost:${PORT}`) });
